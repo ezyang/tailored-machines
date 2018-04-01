@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import machine1 from './machine1.jpg'
+import machine2 from './machine2.jpg'
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL + '/'}>
@@ -28,6 +30,10 @@ const App = () => (
 const Taylor = ({ match }) => {
   return <div>
     Taylor
+    <ul>
+      <li><img src={machine1} height="300" width="300" /></li>
+      <li><img src={machine2} height="300" width="300" /></li>
+    </ul>
   </div>;
 };
 
